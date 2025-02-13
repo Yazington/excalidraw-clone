@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Jura:wght@300..700&family=Mooli&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Tilt+Neon&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom properties for dark/light mode */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  height: 100vh;
+  width: 100vw;
+
+  /* Font families */
+  --font-grotesque: 'Darker Grotesque', sans-serif;
+  --font-jura: 'Jura', sans-serif;
+  --font-mooli: 'Mooli', sans-serif;
+  --font-museo: 'MuseoModerno', sans-serif;
+  --font-outfit: 'Outfit', sans-serif;
+  --font-tiltNeon: 'Tilt Neon', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #131313;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-grotesque); /* Default font */
+}
+
+/* Utility classes using the fonts */
+.font-grotesque {
+  font-family: var(--font-grotesque);
+}
+
+.font-jura {
+  font-family: var(--font-jura);
+}
+
+.font-mooli {
+  font-family: var(--font-mooli);
+}
+
+.font-museo {
+  font-family: var(--font-museo);
+}
+
+.font-outfit {
+  font-family: var(--font-outfit);
+}
+
+.font-tiltNeon {
+  font-family: var(--font-tiltNeon);
+}
+
+div {
+  border-radius: 0.5rem;
+  border-width: 0.1rem;
+  border-color: hsl(0, 0%, 20%);
+}

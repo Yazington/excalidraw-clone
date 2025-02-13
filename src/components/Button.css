@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  border-width: 0;
+  background-color: transparent; /* Dark gray */
+  transition: background-color 0.3s ease, border-radius 0.3s ease; /* Smooth transition */
+  min-width: 2rem;
+  min-height: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2rem;
+}
+
+.button:hover {
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 20%); /* Slightly lighter gray */
+}
+
+.button.active {
+  border-radius: 0.5rem;
+  background-color: hsl(262, 28%, 30%);
+}

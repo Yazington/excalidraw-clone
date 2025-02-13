@@ -1,0 +1,15 @@
+.mainbar {
+  display: flex;
+  max-height: 50px;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  /* width: 20%; */
+  /* min-width: 15rem; */
+  padding: 5;
+  overflow: hidden;
+  font-weight: 500;
+  background-color: #282329;
+  position: fixed;
+  top: 10px;
+}
